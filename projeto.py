@@ -128,6 +128,7 @@ def excluir(matricula):
 
 
 def Lancar_notas(matricula_aluno, nota1, nota2, media):
+    """lançar notas de alunos """
     conexao = sqlite3.connect(BD)
     cursor = conexao.cursor()
     sql = ("INSERT INTO notas (matricula_aluno, nota1, nota2, media) VALUES ('%d', '%f', '%f', '%f')"
