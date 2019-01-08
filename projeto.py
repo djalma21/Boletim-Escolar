@@ -144,6 +144,7 @@ def Lancar_notas(matricula_aluno, nota1, nota2, media):
 
 
 def listar_notas():
+    """listar todas as notas"""
     conexao = sqlite3.connect(BD)
     cursor = conexao.cursor()
     sql = "SELECT * FROM notas  "
